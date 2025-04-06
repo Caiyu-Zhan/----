@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>我的第一個網頁</title>
+    <link rel="stylesheet" href="uiux.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+    <div class="page-container">
+
+    <header>
+        <h1 class="page-title">健行筆記</h1>
+    </header>
+
+    <main>
+        <section id="form">
+            <div class="center-wrapper">
+              <div class="register-box">
+                <h2>註冊</h2>
+                    <form>
+                      <fieldset>
+                        <legend>基本資料</legend>                      
+                    <!-- 使用者名稱 -->
+                    <div class="form-group">
+                        <label class="form-label" for="username">
+                            <span class="required">*</span>使用者名稱：</label>
+                        <input type="text" id="username" placeholder="請輸入您的姓名">
+                        <span class="error-text">此欄位為必填</span>
+                      </div>
+                
+                    <!-- 手機號碼 -->
+                    <div class="form-group">
+                        <label class="form-label">
+                            <span class="required">*</span>手機號碼：</label>
+                        <div class="phone-row">
+                          <select>
+                            <option value="+886">台灣 (+886)</option>
+                            <option value="+81">日本 (+81)</option>
+                            <option value="+1">美國 (+1)</option>
+                          </select>
+                          <input type="tel" placeholder="請輸入手機號碼">
+                        </div>
+                      </div>
+                
+                    <!-- 電子郵件 -->
+                    <div class="form-group">
+                        <label class="form-label">
+                            <span class="required">*</span>電子郵件：</label>
+                        <input type="email" placeholder="請輸入電子郵件">
+                        <span class="error-text">請輸入有效的電子郵件</span>
+                      </div>
+                      
+                    <!-- 密碼 -->
+                    <div class="form-group">
+                        <label class="form-label">
+                            <span class="required">*</span>密碼：</label>
+                        <input type="password" placeholder="至少8個字元，包含大小寫字母和數字">
+                      </div>
+                
+                    <!-- 密碼確認 -->
+                    <div class="form-group">
+                        <label class="form-label">
+                            <span class="required">*</span>密碼確認：</label>
+                        <input type="password" placeholder="請再次輸入密碼">
+                        <div id="strength-message">請輸入密碼</div>
+                      </div>
+                      
+                    <!-- 生日 -->
+                    <div class="form-group">
+                        <label class="form-label">
+                            <span class="required">*</span>生日：</label>
+                        <input type="date">
+                      </div>
+                
+                    <!-- 性別 -->
+                    <div class="form-group">
+                        <label class="form-label"><span class="required">*</span>性別：</label>
+                        <div class="gender-options">
+                          <label><input type="radio" name="gender" value="male"> 男</label>
+                          <label><input type="radio" name="gender" value="female"> 女</label>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>興趣</legend>
+                    <!-- 想了解 -->
+                    <div class="form-group">
+                        <label class="form-label">想了解：</label>
+                        <div class="checkbox-box">
+                            <label><input type="checkbox" name="interests" value="登山開團"> 登山開團</label>
+                            <label><input type="checkbox" name="interests" value="裝備資訊"> 裝備資訊</label>
+                            <label><input type="checkbox" name="interests" value="戶外百科"> 戶外百科</label>
+                            <label><input type="checkbox" name="interests" value="精選路線"> 精選路線</label>
+                            <label><input type="checkbox" name="interests" value="書籍"> 書籍</label>
+                            <label><input type="checkbox" name="interests" value="攀登心得"> 攀登心得</label>
+                            <label><input type="checkbox" name="interests" value="生態保育"> 生態保育</label>
+                            <label><input type="checkbox" name="interests" value="登山醫學"> 登山醫學</label>
+                            <label><input type="checkbox" name="interests" value="國外登山資訊"> 國外登山資訊</label>
+                            <label><input type="checkbox" name="interests" value="其他"> 其他</label>
+                        </div>
+                    </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>個人介紹</legend>
+                    <!-- 建立你的個人介紹，讓大家更認識你! -->
+                    <div class="form-group">
+                        <label class="form-label">建立你的個人介紹，讓大家更認識你!</label><br>
+                         <textarea class="textarea-example"  id="bio" name="bio" rows="8" cols="20" placeholder="範例:嗨!我是小山，已經攀登過5座百岳啦，每次都擔任壓隊人員，請大家多多指教"></textarea><br><br>
+                    </div>
+                    </fieldset>
+                        <div class="form-group button-wrapper">
+                        <button type="submit">註冊</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 健行筆記網頁. All rights reserved.</p>
+    </footer>
+
+    </div>
+</body>
+</html>
