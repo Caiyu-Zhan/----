@@ -1,6 +1,6 @@
 body, html {
   background: linear-gradient(rgba(255, 255, 255, 0.121), rgba(255, 255, 255, 0.334)),
-  url('dji_fly_20230621_photo.jpg') no-repeat center center fixed;
+ url('./dji_fly_20230621_photo.JPG') no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   font-family: 'Noto Sans TC', sans-serif;
